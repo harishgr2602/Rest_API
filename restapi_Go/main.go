@@ -180,6 +180,7 @@ func (a adminPortal) handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	
 	admin := newAdminPortal()
 	coasterHandlers := newCoasterHandlers()
 	http.HandleFunc("/coasters", coasterHandlers.coasters)
